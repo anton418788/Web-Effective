@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Mulish-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Mulish-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Mulish-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Mulish-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+:root {
+
+
+  font-family: 'Muli';
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: calc(100vw / 160);
+
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.btn--stroke {
+  overflow: hidden;
+  position: relative;
+  border: 1.4px solid var(--light-blue-color);
+  background-color: var(--white-color);
+}
+.btn__text {
+    position: relative;
+    z-index: 2;
+    color: var(--white-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    transition: color .3s ease-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+.btn--stroke .btn__text {
+  color: var(--light-blue-color);
+}
+.btn--stroke::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background-color: var(--light-blue-color);
+  transform: translateY(110%);
+
+  transition: transform .3s ease-out;
+}
+.btn--stroke:hover  {
+
+  background-color: transparent;
+}
+.btn--stroke:hover span {
+  color: var(--white-color);
+}
+.btn--stroke:hover::before {
+  transform: translateY(0)
+}
+.btn--dw .btn__text::after {
+  content: "↓";
+  color: var(--light-blue-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  transition: color .3s ease-out;
+}
+.btn--stroke:hover .btn__text::after {
+  color: var(--white-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.grid--reverse {
+  order: -1;
+}

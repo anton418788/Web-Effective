@@ -1,0 +1,27 @@
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__link {
+        color: var(--dark-blue-color);
+        font-family: 'Muli';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.5;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:not([href]) {
+            opacity: 1;
+        }
+
+
+    }
+}

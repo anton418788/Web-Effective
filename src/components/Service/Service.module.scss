@@ -1,0 +1,19 @@
+.service {
+    padding-bottom: 100px;
+
+    &__header {
+        margin-bottom: 80px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+        margin-bottom: 80px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+}

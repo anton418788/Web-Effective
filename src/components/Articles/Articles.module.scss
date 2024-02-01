@@ -1,0 +1,37 @@
+.Articles {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    margin-bottom: 110px;
+
+    &__title {
+        margin-bottom: 70px;
+    }
+
+    &__container {
+        margin-bottom: 70px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            transform: translate(-40%, -50%);
+            width: 130px;
+            height: 114px;
+            background-image: url('./../../assets/dotted.svg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,32 @@
+.serviceCard {
+    padding-top: 55px;
+    padding-left: 37px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+    border-radius: 20px;
+    background: var(--white-color);
+
+    box-shadow: 10px 40px 50px 0 rgba(229, 233, 246, 0.40);
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 1px;
+        padding-bottom: 0;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &__desc {
+        font-size: 16px;
+    }
+
+    &__img {
+        display: block;
+        margin-bottom: 25px;
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+    }
+}
